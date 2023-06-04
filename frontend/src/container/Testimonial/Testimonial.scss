@@ -109,8 +109,8 @@
 
         img {
             width: 100%;
-            height: auto;
-            object-fit: cover;
+            height: 58px;
+            object-fit: contain;
             filter: grayscale(1);
 
             &:hover {

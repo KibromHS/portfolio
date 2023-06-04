@@ -12,7 +12,7 @@ const Skills = () => {
 
     useEffect(() => {
         const skillsQuery = '*[_type == "skills"]';
-        const expQuery = '*[_type == "experience"]';
+        const expQuery = '*[_type == "experiences"]';
 
         client.fetch(skillsQuery).then(data => setSkills(data));
         client.fetch(expQuery).then(data => setExperience(data));
