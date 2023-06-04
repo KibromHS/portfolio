@@ -2,8 +2,8 @@
 
 # dependencies
 /frontend/node_modules
-/.pnp
-.pnp.js
+/frontend/.pnp
+/frontend/.pnp.js
 
 # testing
 /coverage
@@ -18,6 +18,6 @@
 /frontend/.env.test.local
 /frontend/.env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
