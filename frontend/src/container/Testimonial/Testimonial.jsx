@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { client, urlFor } from '../../client';
+import ReactTooltip from 'react-tooltip';
 
 const Testimonial = () => {
     const [brands, setBrands] = useState([]);
@@ -56,6 +57,14 @@ const Testimonial = () => {
                             key={brand._id}
                         >
                             <img src={urlFor(brand.imgUrl).url()} alt={brand.name} />
+                            <ReactTooltip
+                                id={brand.name}
+                                effect='solid'
+                                arrowColor='#fff'
+                                className='skills-tooltip'
+                            >
+                                {brand.name}
+                            </ReactTooltip>
                         </motion.div>
                     );
                 })}
