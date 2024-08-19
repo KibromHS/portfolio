@@ -55,6 +55,8 @@ const Testimonial = () => {
                             whileInView={{opacity: [0, 1]}}
                             transition={{duration: 0.5, type: 'tween'}}
                             key={brand._id}
+                            data-tip
+                            data-for={brand.name}
                         >
                             <img src={urlFor(brand.imgUrl).url()} alt={brand.name} />
                             <ReactTooltip
