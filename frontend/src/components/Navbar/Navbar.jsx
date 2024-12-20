@@ -36,7 +36,7 @@ const Navbar = () => {
 
             {/* <div className='app__navbar-menu'>
                 <HiMenuAlt4 onClick={() => setToggle(true)} />
-                
+                <img src={logo} alt='logo' />
                 {toggle && (
                     <motion.div
                         whileInView={{x: [200, 0], opacity: [0, 1]}}
